@@ -11,22 +11,26 @@
 <body>
     <header>
         <h1><a href="index.html">Logo</a></h1>
+        <form>
+            <input type="search" placeholder="Søke felt" title="Search">
+            <button type="submit" title="Søk etter"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
         <nav>
             <ul>
                 <li>
                     <a href="index.html">Hjem</a>
                 </li>
                 <li>
-                    <a href="product.html">Produkter</a>
+                    <a href="index.html#Våre_mest_populære_produkter">Produkter</a>
                 </li>
                 <li>
-                    <a href="#">Kategorier</a>
+                    <a href="index.html#Våre_med_populære_kategorier">Kategorier</a>
                 </li>
                 <li>
                     <a href="#Global_footer">Kontakt oss</a>
                 </li>
                 
-            </ul>¨
+            </ul>
             <ul>
                 <li>
                     <a href="#"><i class="fa-regular fa-user"></i></a>
@@ -40,8 +44,172 @@
             </ul>
         </nav>
     </header>
-    <main></main>
-    <footer id="Global_footer"></footer>
+    <main>¨
+        <section id="Section1_kasse">
+            <nav>
+                <a href="index.html"><i class="fa-solid fa-arrow-left"></i> forsett å handle</a>
+            </nav>
+            <h2>Kasse</h2>
+        </section>
+        <section id="Section2_kasse">
+            <h3>1.Shoppingen din</h3>
+            <article>
+                <picture>
+                    <img src="https://picsum.photos/id/856/360/600" alt="produkbildet">
+                    <h4>Product Name</h4>
+                    <ul>
+                        <li>Kr 1999</li>
+                        <li>Farge Beige</li>
+                    </ul>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-trash"></i>
+                    
+                    <form>
+                        <label>
+                            Størelse
+                        <select name="Størelse">
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        </label>
+                        <label for="Antall"> Antall
+                            <input type="number" id="antall" name="antall" value="1" min="1" aria-label="Antall">
+                        </label>
+                    </form>
+                </picture>
+            </article>
+            <article>
+                <picture>
+                    <img src="https://picsum.photos/id/856/360/600" alt="produkbildet">
+                    <h4>Product Name</h4>
+                    <ul>
+                        <li>Kr 1999</li>
+                        <li>Farge Beige</li>
+                    </ul>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-trash"></i>
+                    
+                    <form>
+                        <label>
+                            Størelse
+                        <select name="Størelse">
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        </label>
+                        <label for="Antall"> Antall
+                            <input type="number" id="antall" name="antall" value="1" min="1" aria-label="Antall">
+                        </label>
+                    </form>
+                </picture>
+            </article>
+            <article>
+                <picture>
+                    <img src="https://picsum.photos/id/856/360/600" alt="produkbildet">
+                    <h4>Product Name</h4>
+                    <ul>
+                        <li>Kr 1999</li>
+                        <li>Farge Beige</li>
+                    </ul>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-trash"></i>
+                    
+                    <form>
+                        <label>
+                            Størelse
+                        <select name="Størelse">
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        </label>
+                        <label for="Antall"> Antall
+                            <input type="number" id="antall" name="antall" value="1" min="1" aria-label="Antall">
+                        </label>
+                    </form>
+                </picture>
+            </article>
+        </section>
+        <section>
+            <h3>2. Dine opplysninger</h3>
+            <article>
+                <h4>Leverings adressen</h4>
+                <form method="post">
+                    <label for="navn">Fornavn</label>
+                    <input type="text" name="Fornavn" placeholder="Daniel" id="navn" maxlength="30" required>
+
+                    <label for="navn">Etternavn</label>
+                    <input type="text" name="Etternavn" placeholder="Azam" id="navn" maxlength="30" required>
+
+                    <label for="navn">Gatteadresse</label>
+                    <input type="text" name="Adresse" placeholder="Holmliaveien 26" id="navn" maxlength="50" required>
+
+                    <label for="postnummer">Postnummer</label>
+                    <input type="number" id="postnummer" name="postnummer" list="postnummer-valg" placeholder="Velg eller skriv postnummer" aria-label="Postnummer" min="1">
+
+                    <datalist id="postnummer-valg">
+                        <option value="0010">
+                        <option value="0250">
+                        <option value="5000">
+                        <option value="6000">
+                        <option value="7000">
+                    </datalist>
+
+
+            </article>
+        </section>
+        <section></section>
+        <section></section>
+    </main>
+    <footer id="Global_footer">
+        <section>
+            <h2>Logo</h2>
+            <p>Det er ingen som elsker smerte i seg selv, som søker og ønsker det, helt enkelt fordi det er smerte..</p>
+        </section>
+        <section>
+            <h3>Kontakt</h3>
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i> <span>Adresse:</span> B R A Veien 8, 1757, Halden</li>
+                <li><i class="fa-solid fa-phone"></i> <span>Telefon:</span> 69 60 80 00</li>
+                <li><i class="fa-solid fa-envelope"></i> <span>E-post:</span> Halden.hiof.no</li>
+                <li><i class="fa-solid fa-clock"></i><span>Åpninstider:</span> Stenger 15:00</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Snarveier</h3>
+            <nav>
+            <ul> 
+                <li>
+                    <a href="index.html#Våre_mest_populære_produkter">Produkter</a>
+                </li>
+                <li>
+                    <a href="index.html#Våre_med_populære_kategorier">Kategorier</a>
+                </li>
+                <li>
+                    <a href="index.html#Kontakt_oss">Kontakt oss</a>
+                </li>
+            </ul>
+            </nav> 
+        </section>
+        <section> 
+            <h3>Sosiale medier</h3>
+            <ul>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://no.pinterest.com/" target="_blank"> <i class="fa-brands fa-pinterest"></i></a></li>
+            </ul>
+
+        </section>
+    </footer>
     
 </body>
 </html>
