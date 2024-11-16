@@ -120,19 +120,21 @@ header h1 a{
         padding-right: 20px;
         margin-bottom: 60px;
     }
-    a {
+    nav{
         display: flex;
         flex-wrap: wrap;
         background-color: #f7f7f7;
-        margin-left: 266px;
-        padding: 20px;
-        border: #f7f7f7;
+        margin-left: 282px;
         border-radius: 24px;
-        text-decoration: none;
-        color: black;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
+        a {
+            text-decoration: none;
+            color: black;
+            padding: 20px;
+        }
     }
-}
+
+    }
 
 #Våre_mest_populære_produkter{
     display: flex;
@@ -152,6 +154,15 @@ header h1 a{
         border: 1px solid black;
         border-radius: 26px;
         padding: 13px;
+    }
+    nav ul li:hover{
+        background-color: gray;
+    }
+    #nye_produkter{
+        background-color: black;
+        a{
+            color: white;
+        }
     }
     nav ul li a{
         text-decoration: none;
