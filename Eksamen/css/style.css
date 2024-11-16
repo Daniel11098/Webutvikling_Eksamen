@@ -1,0 +1,167 @@
+html{
+    /*Det er slik man koder for responsiv skrift*/
+    font-size: calc(0.5rem + 1vw)
+}
+
+body{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+
+}
+
+#Logo{font-size: 3rem;
+        font-weight: bold;
+
+}
+h2{font-size: 1.8rem;}
+h3{font-size: 1.6rem;}
+h4{font-size: 1.4rem;}
+p, a{font-size: 1rem;}
+
+
+.Footer_skrift{
+    font-weight: bold;
+}
+
+li{
+    list-style: none;
+}
+
+#Global_header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    flex-direction: column;
+}
+
+header h1 a{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+#header_navigeringsliste1{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+    li a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+#header_navigeringsliste2{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    gap: 0.5rem;
+
+    li a{
+        color: black;
+    }
+}
+
+#søkefelt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000000;
+    border-radius: 43px;
+    padding: 2px;
+    background-color: #f7f7f7;
+    order: -1;
+  }
+  
+  #søkefelt input{
+    width: 82%;
+    padding: 4px;
+    border: none;
+    border-radius: 16px;
+    font-size: 15px;
+  }
+  
+  #søkefelt button {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+#banner{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("../bilder/strand_bildet_eksamen11.jpg");
+
+    text-align: right;
+    border-radius: 12px;
+    height: 453px;
+
+    h1  {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 269px;
+        padding-right: 20px;
+    }
+    p {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 230px;
+        padding-right: 20px;
+        margin-bottom: 60px;
+    }
+    a {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #f7f7f7;
+        margin-left: 266px;
+        padding: 20px;
+        border: #f7f7f7;
+        border-radius: 24px;
+        text-decoration: none;
+        color: black;
+        margin-bottom: 40px;
+    }
+}
+
+#Våre_mest_populære_produkter{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h2{
+        font-weight: bold;
+    }
+    nav ul{
+        display: flex;
+        gap: 3rem;
+        padding: 0px;
+    }
+    nav ul li{
+        border: 1px solid black;
+        border-radius: 26px;
+        padding: 13px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: #000000;
+        
+    }
+    nav ul li a:hover{
+        text-decoration: underline !important;
+    }
+
+}
+
+

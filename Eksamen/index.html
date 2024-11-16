@@ -6,32 +6,36 @@
     <link rel="stylesheet" href="ikoner/css/solid.css">
     <link rel="stylesheet" href="ikoner/css/fontawesome.css">
     <link rel="stylesheet" href="ikoner/css/brands.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Forside</title>
 </head>
 <body>
-    <header>
-        <h1><a href="index.html">Logo</a></h1>
-        <form>
-            <input type="search" placeholder="Søke felt" title="Search">
+    <div id="global_container">
+    <header id="Global_header">
+        <form id="søkefelt">
+            <input type="search" placeholder="Søk her" title="Search">
             <button type="submit" title="Søk etter"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
-        <nav>
-            <ul>
-                <li>
+        <nav id="header_navigeringsmeny">
+            <ul id="header_navigeringsliste1">
+                <li class="hjemogprodukter">
                     <a href="index.html">Hjem</a>
                 </li>
-                <li>
+                <li class="hjemogprodukter">
                     <a href="#Våre_mest_populære_produkter">Produkter</a>
                 </li>
                 <li>
-                    <a href="#Våre_med:populære_kategorier">Kategorier</a>
+                    <a href="index.html"><span id="Logo">Logo</span></a>
                 </li>
-                <li>
+                <li class="kontaktossogkatogerier">
+                    <a href="#Våre_med_populære_kategorier">Kategorier</a>
+                </li>
+                <li class="kontaktossogkatogerier">
                     <a href="#Global_footer">Kontakt oss</a>
                 </li>
                 
-            </ul>¨
-            <ul>
+            </ul>
+            <ul id="header_navigeringsliste2">
                 <li>
                     <a href="#"><i class="fa-regular fa-user"></i></a>
                 </li>
@@ -44,22 +48,27 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <section id="banner">
-            <h2>Et harum quidem rerum facilis est et expedita distinctio</h2>
-            <p> Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text seit 1500, als ein unbekannter Schriftsteller eine Hand voll Wörter nahm und diese durcheinander warf um ein Musterbuch zu erstellen. Es hat nicht nur 5 Jahrhunderte überlebt,</p>
+            <h1>Et harum quidem rerum facilis est et expedita distinctio</h1>
+            <p> Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text seit 1500, als ein unbekannter Schriftsteller eine Hand voll Wörter nahm und diese</p>
             <a href="https://e24.no/naeringsliv/i/Vzjz8p/temu-shopping-klarer-ikke-aa-stoppe?referer=https%3A%2F%2Fwww.aftenposten.no" target="_blank">Les mer</a>
-            <img src="https://picsum.photos/200/300" alt="Randombilder">
-            <img src="https://picsum.photos/200/300" alt="Randombilder1">
-            <img src="https://picsum.photos/200/300" alt="Randombilder2">
         </section>
         <section id="Våre_mest_populære_produkter">
             <h2>Våre meste populære Produkter</h2>
             <p>Oppdag det beste av det beste</p>
-            <article><a href="#">New product</a></article>
-            <article><a href="#">Special price</a></article>
-            <article><a href="#">Best sellers</a></article>
+            <nav>
+                <ul class="produkt_meny">
+                    <li><a href="#">New product</a></li>
+                    <li><a href="#">Special price</a></li>
+                    <li><a href="#">Best sellers</a></li>
+                </ul>
+            </nav>            
             <article>
+                <button>
+                    <i class="fa-regular fa-heart"></i>
+                </button>
                 <figure>
                     <img src="https://picsum.photos/id/22/200/300" alt="picsumbildet">
                     <figcaption>
@@ -77,6 +86,9 @@
                 </figure>
             </article>
             <article>
+                <button id="hjerteknapp">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
                 <figure>
                     <img src="https://picsum.photos/id/22/200/300" alt="picsumbildet">
                     <figcaption>
@@ -94,6 +106,9 @@
                 </figure>
             </article>
             <article>
+                <button>
+                    <i class="fa-regular fa-heart"></i>
+                </button>
                 <figure>
                     <img src="https://picsum.photos/id/22/200/300" alt="picsumbildet">
                     <figcaption>
@@ -111,6 +126,9 @@
                 </figure>
             </article>
             <article>
+                <button>
+                    <i class="fa-regular fa-heart"></i>
+                </button>
             <figure>
                 <img src="https://picsum.photos/id/22/200/300" alt="picsumbildet">
                 <figcaption>
@@ -128,6 +146,9 @@
             </figure>
             </article>
             <article>
+                <button>
+                    <i class="fa-regular fa-heart"></i>
+                </button>
                 <figure>
                     <img src="https://picsum.photos/id/22/200/300" alt="picsumbildet">
                     <figcaption>
@@ -145,6 +166,9 @@
                 </figure>
             </article>
             <article>
+                <button>
+                    <i class="fa-regular fa-heart"></i>
+                </button>
                 <figure>
                     <img src="https://picsum.photos/id/22/200/300" alt="picsumbildet">
                     <figcaption>
@@ -254,10 +278,10 @@
         <section id="Kontakt_oss">
             <h3>Kontakt</h3>
             <ul>
-                <li><i class="fa-solid fa-location-dot"></i> <span>Adresse:</span> B R A Veien 8, 1757, Halden</li>
-                <li><i class="fa-solid fa-phone"></i> <span>Telefon:</span> 69 60 80 00</li>
-                <li><i class="fa-solid fa-envelope"></i> <span>E-post:</span> Halden.hiof.no</li>
-                <li><i class="fa-solid fa-clock"></i><span>Åpninstider:</span> Stenger 15:00</li>
+                <li><i class="fa-solid fa-location-dot"></i> <span class="Footer_skrift">Adresse:</span> B R A Veien 8, 1757, Halden</li>
+                <li><i class="fa-solid fa-phone"></i> <span class="Footer_skrift">Telefon:</span> 69 60 80 00</li>
+                <li><i class="fa-solid fa-envelope"></i> <span class="Footer_skrift">E-post:</span> Halden.hiof.no</li>
+                <li><i class="fa-solid fa-clock"></i><span class="Footer_skrift">Åpninstider:</span> Stenger 15:00</li>
             </ul>
         </section>
         <section>
@@ -287,7 +311,7 @@
 
         </section>
     </footer>
-    
+</div>
 </body>
 
 </html>

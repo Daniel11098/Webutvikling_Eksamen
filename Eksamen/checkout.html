@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="ikoner/css/solid.css">
     <link rel="stylesheet" href="ikoner/css/fontawesome.css">
     <link rel="stylesheet" href="ikoner/css/brands.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Checkout</title>
 </head>
 <body>
@@ -56,6 +57,7 @@
             <article>
                 <picture>
                     <img src="https://picsum.photos/id/856/360/600" alt="produkbildet">
+                </picture>
                     <h4>Product Name</h4>
                     <ul>
                         <li>Kr 1999</li>
@@ -75,15 +77,15 @@
                             <option value="XL">XL</option>
                         </select>
                         </label>
-                        <label for="Antall"> Antall
+                        <label for="antall"> Antall
                             <input type="number" id="antall" name="antall" value="1" min="1" aria-label="Antall">
-                        </label>
+                        </label>                                            
                     </form>
-                </picture>
             </article>
             <article>
                 <picture>
                     <img src="https://picsum.photos/id/856/360/600" alt="produkbildet">
+                </picture>
                     <h4>Product Name</h4>
                     <ul>
                         <li>Kr 1999</li>
@@ -103,15 +105,14 @@
                             <option value="XL">XL</option>
                         </select>
                         </label>
-                        <label for="Antall"> Antall
-                            <input type="number" id="antall" name="antall" value="1" min="1" aria-label="Antall">
-                        </label>
+                        <label for="antall2">Antall</label>
+                            <input type="number" id="antall2" name="antall" value="1" min="1" aria-label="Antall">
                     </form>
-                </picture>
             </article>
             <article>
                 <picture>
                     <img src="https://picsum.photos/id/856/360/600" alt="produkbildet">
+                </picture>
                     <h4>Product Name</h4>
                     <ul>
                         <li>Kr 1999</li>
@@ -131,11 +132,9 @@
                             <option value="XL">XL</option>
                         </select>
                         </label>
-                        <label for="Antall"> Antall
-                            <input type="number" id="antall" name="antall" value="1" min="1" aria-label="Antall">
-                        </label>
+                        <label for="antall3">Antall</label>
+                            <input type="number" id="antall3" name="antall" value="1" min="1" aria-label="Antall">
                     </form>
-                </picture>
             </article>
         </section>
         <section>
@@ -143,22 +142,22 @@
             <article>
                 <h4>Leverings adressen</h4>
                 <form method="post">
-                    <label for="navn">Fornavn</label>
-                    <input type="text" name="Fornavn" placeholder="Daniel" id="navn" maxlength="30" required title="Fornavn">
+                    <label for="fornavn">Fornavn</label>
+                    <input type="text" name="Fornavn" placeholder="Daniel" id="fornavn" maxlength="30" required title="Fornavn">
 
-                    <label for="navn">Etternavn</label>
-                    <input type="text" name="Etternavn" placeholder="Azam" id="navn" maxlength="30" required title="Etternavn">
+                    <label for="etternavn">Etternavn</label>
+                    <input type="text" name="Etternavn" placeholder="Azam" id="etternavn" maxlength="30" required title="Etternavn">
 
-                    <label for="navn">Gatteadresse</label>
-                    <input type="text" name="Adresse" placeholder="Holmliaveien 26" id="Adresse" maxlength="50" required title="Vennligst skriv inn din gateadresse">
+                    <label for="gateadresse">Gatteadresse</label>
+                    <input type="text" name="gateadresse" placeholder="Holmliaveien 26" id="gateadresse" maxlength="50" required title="Vennligst skriv inn din gateadresse">
 
                     <label for="postnummer">Postnummer</label>
                     <input type="number" id="postnummer" name="postnummer" placeholder="1752" required min="1000" max="9999" title="Vennligst skriv inn din postnummer">
 
-                    <label for="navn">Poststed</label>
-                    <input type="text" name="Poststed" placeholder="Oslo" id="Adresse" maxlength="50" required title="Vennligst skriv inn ditt Poststed">
+                    <label for="Poststed">Poststed</label>
+                    <input type="text" name="Poststed" placeholder="Oslo" id="Poststed" maxlength="50" required title="Vennligst skriv inn ditt Poststed">
+                </form>
             </article>
-
             <article>
                 <h4>Kontaktinformasjon</h4>
                 <form method="post">
@@ -196,7 +195,7 @@
                         <input type="radio" name="valg" value="express-utlevering" required>
                         Express pakke til utleveringssted
                     </label>
-                    <p>59 kr <i class="fa-solid fa-money-check"></i></p>
+                    <p>59 kr <i class="fa-brands fa-dhl"></i></p>
                     <span>1-3 Virkedager</span>
                 </article>
                 
@@ -212,7 +211,46 @@
             </form>
         </section>
         
-        <section></section>
+        <section>
+            <h3>4. Betaling</h3>
+
+            <h4>Betal med kort <i class="fa-solid fa-credit-card"></i></h4>
+            <form id="betalingsskjema">
+                <article>
+
+                <label for="kortnummer">Kortnummer</label>
+                <input type="number" id="kortnummer" name="kortnummer" placeholder="123456789" required title="Skriv inn ditt kortnummer">
+                
+                <label for="utlopsdato">Utløpsdato (MM/ÅÅ)</label>
+                <input type="text" id="utlopsdato" name="utlopsdato" placeholder="MM/ÅÅ" required pattern="\d{2}/\d{2}" title="Fyll inn utlopsdato på ditt kort">
+                <i class="fa-regular fa-calendar"></i>
+                
+                <label for="cvc">CVC/CVV</label>
+                <input type="text" id="cvc" name="cvc" placeholder="123" required pattern="\d{3}" title="fyll inn de tre bakerste kodene i bak i kortet ditt">
+                <p>Å betale inkl. mva.</p>
+                <span>1199 kr</span>
+            
+                <button type="submit">Fullfør kjøp</button>
+                </article>
+
+                <p>
+                    Du bekrefter herved at opplysningene og dokumentene du har
+                    oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg
+                    retten til å heve eller avslutte avtaleforholdet dersom det foreligger
+                    uriktige eller ufullstendige opplysninger.
+                </p>
+                <label>
+                    <input type="checkbox" name="godtar_vilkår" required>
+                    Ja, jeg godtar vilkårene
+                  </label>
+                  
+                  <label>
+                    <input type="checkbox" name="nyhetsbrev">
+                    Ja takk! Send nyhetsbrev til meg
+                  </label>
+                </form>
+
+        </section>
     </main>
     <footer id="Global_footer">
         <section>
