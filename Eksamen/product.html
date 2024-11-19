@@ -4,35 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="ikoner/css/solid.css">
+    <link rel="stylesheet" href="ikoner/css/regular.css">
     <link rel="stylesheet" href="ikoner/css/fontawesome.css">
     <link rel="stylesheet" href="ikoner/css/brands.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Product</title>
 </head>
 <body>
-    <header>
-        <h1><a href="index.html">Logo</a></h1>
-        <form>
-            <input type="search" placeholder="Søke felt" title="Search">
+    <header id="Global_header">
+        <form id="søkefelt">
+            <input type="search" placeholder="Søk her" title="Search">
             <button type="submit" title="Søk etter"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
-        <nav>
-            <ul>
-                <li>
+        <nav id="header_navigeringsmeny">
+            <ul id="header_navigeringsliste1">
+                <li class="hjemogprodukter">
                     <a href="index.html">Hjem</a>
                 </li>
-                <li>
+                <li class="hjemogprodukter">
                     <a href="index.html#Våre_mest_populære_produkter">Produkter</a>
                 </li>
                 <li>
+                    <a href="index.html"><span id="Logo">Logo</span></a>
+                </li>
+                <li class="kontaktossogkatogerier">
                     <a href="index.html#Våre_med_populære_kategorier">Kategorier</a>
                 </li>
-                <li>
+                <li class="kontaktossogkatogerier">
                     <a href="#Global_footer">Kontakt oss</a>
                 </li>
                 
             </ul>
-            <ul>
+            <ul id="header_navigeringsliste2">
                 <li>
                     <a href="#"><i class="fa-regular fa-user"></i></a>
                 </li>
@@ -45,41 +48,35 @@
             </ul>
         </nav>
     </header>
-    <nav aria-label="breadcrumb">
+    <nav aria-label="breadcrumb" id="breadcrumb1">
         <ul>
-            <li><a href="index.html">Hjem</a></li>
-            <li><a href="index.html#Våre_med_populære_kategorier">Kategori</a></li>
-            <li>Produktnavn</li>
+            <li><a href="index.html">Hjem <i class="fa-solid fa-angle-right"></i></a></li>
+            <li><a href="index.html#Våre_med_populære_kategorier">Kategori <i class="fa-solid fa-angle-right"></i></a></li>
+            <li><span class="Produktnavn_breadcrumb">Produktnavn</span></li>
         </ul>
     </nav>
     <main>
         <section>
-            <picture>
-                <source media="(max-width:400px)" srcset="https://picsum.photos/id/856/200/500">
-                <source media="(max-width:800px)" srcset="https://picsum.photos/id/856/360/700">
-                <img src="https://picsum.photos/id/856/360/600" alt="picsumbildet856">
-            </picture>
-            <picture>
-                <source media="(max-width:400px)" srcset="https://picsum.photos/id/856/66/200">
-                <source media="(max-width:800px)" srcset="https://picsum.photos/id/856/120/333">
-                <img src="https://picsum.photos/id/856/120/200" alt="picsumbildet856">
-            </picture>
-            <picture>
-                <source media="(max-width:400px)" srcset="https://picsum.photos/id/856/66/200">
-                <source media="(max-width:800px)" srcset="https://picsum.photos/id/856/120/333">
-                <img src="https://picsum.photos/id/856/120/200" alt="picsumbildet856">
-            </picture>
-            <picture>
-                <source media="(max-width:400px)" srcset="https://picsum.photos/id/856/66/200">
-                <source media="(max-width:800px)" srcset="https://picsum.photos/id/856/120/333">
-                <img src="https://picsum.photos/id/856/120/200" alt="picsumbildet856">
-            </picture>
+            <div id="prdoukt_bildet_bride">
+                <picture id="Stor_bride_bilde1">
+                    <img id="Stor_bride_bilde" src="../Eksamen/bilder/bride_pic.jpg" alt="bride_pic_stor">
+                </picture>
+                <picture class="liten_bride_bild1">
+                    <img class="liten_bride_bilde" src="../Eksamen/bilder/bride_pic.jpg" alt="bride_pic_liten1">
+                </picture>
+                <picture class="liten_bride_bilde2">
+                    <img class="liten_bride_bilde" src="../Eksamen/bilder/bride_pic.jpg" alt="bride_pic_liten2">
+                </picture>
+                <picture class="liten_bride_bilde3">
+                    <img class="liten_bride_bilde" src="../Eksamen/bilder/bride_pic.jpg" alt="bride_pic_liten3">
+                </picture>
+            </div>
         </section>
-        <section>
+        <section id="info_om_produkte">
             <h2>Produktnavn</h2>
-            <a href="https://www.gucci.com/no/en_gb/" target="_blank">Merke navn</a>
+            <a href="https://www.gucci.com/no/en_gb/" target="_blank">MERKE NAVN</a>
             <p>5999 kr inkl. mva</p>
-            <p><span>Farge:</span>Beige</p>
+            <p>Farge: <span id="produkt_farge">Beige </span></p>
             
             <form>
                 <label>
@@ -95,7 +92,7 @@
 
             </label>
             </form>
-            <article>
+            <article id="legg_handle_kurv_knapp">
                 <button>
                     Legg i handle kurven 
                 </button>
@@ -499,42 +496,42 @@
     </aside>
 
     <footer id="Global_footer">
-        <section>
+        <section id="footer_logo">
             <h2>Logo</h2>
             <p>Det er ingen som elsker smerte i seg selv, som søker og ønsker det, helt enkelt fordi det er smerte..</p>
         </section>
-        <section>
+        <section id="Kontakt_oss">
             <h3>Kontakt</h3>
             <ul>
-                <li><i class="fa-solid fa-location-dot"></i> <span>Adresse:</span> B R A Veien 8, 1757, Halden</li>
-                <li><i class="fa-solid fa-phone"></i> <span>Telefon:</span> 69 60 80 00</li>
-                <li><i class="fa-solid fa-envelope"></i> <span>E-post:</span> Halden.hiof.no</li>
-                <li><i class="fa-solid fa-clock"></i><span>Åpninstider:</span> Stenger 15:00</li>
+                <li><i class="fa-solid fa-location-dot"></i> <span class="Footer_skrift">Adresse:</span> B R A Veien 8, 1757, Halden</li>
+                <li><i class="fa-solid fa-phone"></i> <span class="Footer_skrift">Telefon:</span> 69 60 80 00</li>
+                <li><i class="fa-solid fa-envelope"></i> <span class="Footer_skrift">E-post:</span> Halden.hiof.no</li>
+                <li><i class="fa-solid fa-clock"></i><span class="Footer_skrift">Åpninstider:</span> Stenger 15:00</li>
             </ul>
         </section>
-        <section>
+        <section id="Snarveier">
             <h3>Snarveier</h3>
             <nav>
-            <ul> 
-                <li>
-                    <a href="index.html#Våre_mest_populære_produkter">Produkter</a>
-                </li>
-                <li>
-                    <a href="index.html#Våre_med_populære_kategorier">Kategorier</a>
-                </li>
-                <li>
-                    <a href="index.html#Kontakt_oss">Kontakt oss</a>
-                </li>
-            </ul>
+                <ul> 
+                    <li class="footer_liste">
+                        <a href="index.html#Våre_mest_populære_produkter">Produkter</a>
+                    </li>
+                    <li class="footer_liste">
+                        <a href="index.html#Våre_med_populære_kategorier">Kategorier</a>
+                    </li>
+                    <li class="footer_liste">
+                        <a href="index.html#Kontakt_oss">Kontakt oss</a>
+                    </li>
+                </ul>
             </nav> 
         </section>
-        <section> 
+        <section id="sosiale_medier"> 
             <h3>Sosiale medier</h3>
             <ul>
-                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="https://no.pinterest.com/" target="_blank"> <i class="fa-brands fa-pinterest"></i></a></li>
+                <li class="footer_liste"><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="footer_liste"><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li class="footer_liste"><a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li class="footer_liste"><a href="https://no.pinterest.com/" target="_blank"> <i class="fa-brands fa-pinterest"></i></a></li>
             </ul>
 
         </section>
