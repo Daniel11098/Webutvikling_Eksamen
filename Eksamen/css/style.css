@@ -7,8 +7,10 @@ body{
     
     font-family: Arial, Helvetica, sans-serif;
     margin: 10px;
+    gap: 20px;
 
 }
+
 
 #Logo{font-size: 3rem;
         font-weight: bold;
@@ -18,6 +20,8 @@ h2{font-size: 1.8rem;}
 h3{font-size: 1.6rem;}
 h4{font-size: 1.4rem;}
 p, a{font-size: 1rem;}
+
+
 
 
 .Footer_skrift{
@@ -92,11 +96,12 @@ li{
     display: flex;
     flex-wrap: wrap;
     background-image: url("../bilder/strand_bildet_eksamen11.jpg");
-
+    flex-direction: column;
     text-align: right;
     border-radius: 12px;
-    height: 453px;
+    height: 60vh;
     padding-right: 20px;
+    gap: 20px;
 
     h1  {
         display: flex;
@@ -110,19 +115,16 @@ li{
         margin-bottom: 60px;
     }
     nav{
-        display: flex;
-        flex-wrap: wrap;
-        background-color: #f7f7f7;
+        background-color: rgba(255, 255, 255, 0.8);
         margin-left: 76%;
         border-radius: 24px;
-        margin-bottom: 32px;
-        max-height: 55px;
-        min-height: 55px;
+        align-self: flex-start;
         a {
             text-decoration: none;
             color: black;
             padding: 17px;
             font-weight: bolder;
+            display: inline-block;
         }
     }
 
@@ -244,26 +246,25 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
-    filter: blur(3px);
 }
 #Kategori1{
-    background-image: url(../bilder/masse_randome_ting.jpg);
+    background-image: url(../bilder/masse_randome_ting.png);
 }
 
 #Kategori2{
-    background-image: url(../bilder/dame_sko.jpg);
+    background-image: url(../bilder/dame_sko.png);
 }
 
 #Kategori3{
-    background-image: url(../bilder/bok.jpg);
+    background-image: url(../bilder/bok.png);
 }
 
 #Kategori4{
-    background-image: url(../bilder/Trær.jpg);
+    background-image: url(../bilder/Trær.png);
 }
 
 #Kategori5{
-    background-image: url(../bilder/vei_iskogen.jpg);
+    background-image: url(../bilder/vei_iskogen.png);
 }
 
 #Våre_med_populære_kategorier article h3{
@@ -271,5 +272,87 @@ li{
     color: white;
 }
 
+.Anmeldelser_kort{
+    max-width: 289px;
+    display: flex;
+    flex: 0 0 70%; /* Dette gjør at hvert kort tar opp 70% av bredden */
+}
 
+
+.Anmeldelser_kort img { 
+    border-radius: 50%;
+    height: 94px;
+    width: 94px;
+}
+
+
+.Anmeldelser h2{
+    text-align: left; 
+    margin-bottom: 20px;
+}
+
+#Anmeldelser_uten_overskrift{
+    padding: 20px;
+    overflow-x: auto; 
+    display: flex; 
+    gap: 20px; 
+}
+
+#Global_footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+#footer_logo{
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+#Kontakt_oss{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+#Snarveier{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+#sosiale_medier{
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+
+#Kontakt_oss ul{
+    gap: 1rem;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    padding: 2px;
+}
+
+#Snarveier ul{
+    gap: 1rem;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    padding: 2px;
+}
+
+#sosiale_medier ul{
+    gap: 3rem;
+    display: flex;
+    text-align: left;
+    padding: 2px;
+}
+
+#sosiale_medier ul li a i{
+    font-size: 2rem;
+}
+
+.footer_liste a{
+    text-decoration: none;
+    color: #000000;
+}
+.footer_liste{
+    gap: 1rem;
+}
 
