@@ -4,35 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="ikoner/css/solid.css">
+    <link rel="stylesheet" href="ikoner/css/regular.css">
     <link rel="stylesheet" href="ikoner/css/fontawesome.css">
     <link rel="stylesheet" href="ikoner/css/brands.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Checkout</title>
 </head>
 <body>
-    <header>
-        <h1><a href="index.html">Logo</a></h1>
-        <form>
-            <input type="search" placeholder="Søke felt" title="Search">
+    <header id="Global_header">
+        <form id="søkefelt">
+            <input type="search" placeholder="Søk her" title="Search">
             <button type="submit" title="Søk etter"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
-        <nav>
-            <ul>
-                <li>
+        <nav id="header_navigeringsmeny">
+            <ul id="header_navigeringsliste1">
+                <li class="hjemogprodukter">
                     <a href="index.html">Hjem</a>
                 </li>
-                <li>
+                <li class="hjemogprodukter">
                     <a href="index.html#Våre_mest_populære_produkter">Produkter</a>
                 </li>
                 <li>
+                    <a href="index.html"><span id="Logo">Logo</span></a>
+                </li>
+                <li class="kontaktossogkatogerier">
                     <a href="index.html#Våre_med_populære_kategorier">Kategorier</a>
                 </li>
-                <li>
+                <li class="kontaktossogkatogerier">
                     <a href="#Global_footer">Kontakt oss</a>
                 </li>
                 
             </ul>
-            <ul>
+            <ul id="header_navigeringsliste2">
                 <li>
                     <a href="#"><i class="fa-regular fa-user"></i></a>
                 </li>
@@ -45,27 +48,24 @@
             </ul>
         </nav>
     </header>
-    <main>¨
+    <main>
         <section id="Section1_kasse">
             <nav>
                 <a href="index.html"><i class="fa-solid fa-arrow-left"></i> forsett å handle</a>
             </nav>
-            <h2>Kasse</h2>
+            <h1>Kasse</h1>
         </section>
         <section id="Section2_kasse">
-            <h3>1.Shoppingen din</h3>
-            <article>
+            <h2>1.Shoppingen din</h2>
+            <article class="checkout_produktkort">
                 <picture>
-                    <img src="https://picsum.photos/id/856/360/600" alt="produkbildet">
+                    <img src="../Eksamen/bilder/bride_pic.jpg" alt="produkbildet">
                 </picture>
-                    <h4>Product Name</h4>
+                    <h3>Product Name</h3>
                     <ul>
                         <li>Kr 1999</li>
                         <li>Farge Beige</li>
                     </ul>
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-trash"></i>
-                    
                     <form>
                         <label>
                             Størelse
@@ -81,19 +81,20 @@
                             <input type="number" id="antall" name="antall" value="1" min="1" aria-label="Antall">
                         </label>                                            
                     </form>
+                    <p>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </p>
             </article>
-            <article>
+            <article class="checkout_produktkort">
                 <picture>
-                    <img src="https://picsum.photos/id/856/360/600" alt="produkbildet">
+                    <img src="../Eksamen/bilder/bride_pic.jpg" alt="produkbildet">
                 </picture>
-                    <h4>Product Name</h4>
+                    <h3>Product Name</h3>
                     <ul>
                         <li>Kr 1999</li>
                         <li>Farge Beige</li>
-                    </ul>
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-trash"></i>
-                    
+                    </ul>               
                     <form>
                         <label>
                             Størelse
@@ -108,19 +109,20 @@
                         <label for="antall2">Antall</label>
                             <input type="number" id="antall2" name="antall" value="1" min="1" aria-label="Antall">
                     </form>
+                    <p>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </p>
             </article>
-            <article>
+            <article class="checkout_produktkort">
                 <picture>
-                    <img src="https://picsum.photos/id/856/360/600" alt="produkbildet">
+                    <img src="../Eksamen/bilder/bride_pic.jpg" alt="produkbildet">
                 </picture>
-                    <h4>Product Name</h4>
+                    <h3>Product Name</h3>
                     <ul>
                         <li>Kr 1999</li>
                         <li>Farge Beige</li>
                     </ul>
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-trash"></i>
-                    
                     <form>
                         <label>
                             Størelse
@@ -135,13 +137,17 @@
                         <label for="antall3">Antall</label>
                             <input type="number" id="antall3" name="antall" value="1" min="1" aria-label="Antall">
                     </form>
+                    <p>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </p>
             </article>
         </section>
-        <section>
-            <h3>2. Dine opplysninger</h3>
+        <section id="Section3_kasse">
+            <h2>2. Dine opplysninger</h2>
             <article>
-                <h4>Leverings adressen</h4>
-                <form method="post">
+                <h3>Leverings adressen</h3>
+                <form method="post" id="Form_dine_opplysninger">
                     <label for="fornavn">Fornavn</label>
                     <input type="text" name="Fornavn" placeholder="Daniel" id="fornavn" maxlength="30" required title="Fornavn">
 
@@ -158,9 +164,9 @@
                     <input type="text" name="Poststed" placeholder="Oslo" id="Poststed" maxlength="50" required title="Vennligst skriv inn ditt Poststed">
                 </form>
             </article>
-            <article>
-                <h4>Kontaktinformasjon</h4>
-                <form method="post">
+            <article id="Kontaktinformasjon">
+                <h3>Kontaktinformasjon</h3>
+                <form method="post" id="form_kontaktinformasjon">
                     <label>
                         E-post 
                         <input type="email" name="email" placeholder="Eksempelhiof@.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required title="Skriv inn din E-post">
@@ -176,9 +182,9 @@
             </article>
         </section>
         <section>
-            <h3>3. Levering</h3>
+            <h2>3. Levering</h2>
         
-            <h4>Leveringsvalg</h4>
+            <h3>Leveringsvalg</h3>
             <form>
                 <article>
                     <label>
@@ -212,9 +218,9 @@
         </section>
         
         <section>
-            <h3>4. Betaling</h3>
+            <h2>4. Betaling</h2>
 
-            <h4>Betal med kort <i class="fa-solid fa-credit-card"></i></h4>
+            <h3>Betal med kort <i class="fa-solid fa-credit-card"></i></h3>
             <form id="betalingsskjema">
                 <article>
 
@@ -253,42 +259,42 @@
         </section>
     </main>
     <footer id="Global_footer">
-        <section>
+        <section id="footer_logo">
             <h2>Logo</h2>
             <p>Det er ingen som elsker smerte i seg selv, som søker og ønsker det, helt enkelt fordi det er smerte..</p>
         </section>
-        <section>
+        <section id="Kontakt_oss">
             <h3>Kontakt</h3>
             <ul>
-                <li><i class="fa-solid fa-location-dot"></i> <span>Adresse:</span> B R A Veien 8, 1757, Halden</li>
-                <li><i class="fa-solid fa-phone"></i> <span>Telefon:</span> 69 60 80 00</li>
-                <li><i class="fa-solid fa-envelope"></i> <span>E-post:</span> Halden.hiof.no</li>
-                <li><i class="fa-solid fa-clock"></i><span>Åpninstider:</span> Stenger 15:00</li>
+                <li><i class="fa-solid fa-location-dot"></i> <span class="Footer_skrift">Adresse:</span> B R A Veien 8, 1757, Halden</li>
+                <li><i class="fa-solid fa-phone"></i> <span class="Footer_skrift">Telefon:</span> 69 60 80 00</li>
+                <li><i class="fa-solid fa-envelope"></i> <span class="Footer_skrift">E-post:</span> Halden.hiof.no</li>
+                <li><i class="fa-solid fa-clock"></i><span class="Footer_skrift">Åpninstider:</span> Stenger 15:00</li>
             </ul>
         </section>
-        <section>
+        <section id="Snarveier">
             <h3>Snarveier</h3>
             <nav>
-            <ul> 
-                <li>
-                    <a href="index.html#Våre_mest_populære_produkter">Produkter</a>
-                </li>
-                <li>
-                    <a href="index.html#Våre_med_populære_kategorier">Kategorier</a>
-                </li>
-                <li>
-                    <a href="index.html#Kontakt_oss">Kontakt oss</a>
-                </li>
-            </ul>
+                <ul> 
+                    <li class="footer_liste">
+                        <a href="index.html#Våre_mest_populære_produkter">Produkter</a>
+                    </li>
+                    <li class="footer_liste">
+                        <a href="index.html#Våre_med_populære_kategorier">Kategorier</a>
+                    </li>
+                    <li class="footer_liste">
+                        <a href="index.html#Kontakt_oss">Kontakt oss</a>
+                    </li>
+                </ul>
             </nav> 
         </section>
-        <section> 
+        <section id="sosiale_medier"> 
             <h3>Sosiale medier</h3>
             <ul>
-                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="https://no.pinterest.com/" target="_blank"> <i class="fa-brands fa-pinterest"></i></a></li>
+                <li class="footer_liste"><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="footer_liste"><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li class="footer_liste"><a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li class="footer_liste"><a href="https://no.pinterest.com/" target="_blank"> <i class="fa-brands fa-pinterest"></i></a></li>
             </ul>
 
         </section>
