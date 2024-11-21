@@ -219,7 +219,7 @@ li{
 }
 
 .produkt_kort button i {
-    color: #ffffff80;
+    color: #ffffff80 ;
     font-size: 18px;
 }
 
@@ -426,12 +426,76 @@ li{
     gap: 1rem;
 }
 #legg_handle_kurv_knapp{
-    display: inline;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
 }
 
 #knapp_kurv{
-    width: 70%;
+    width: 87%;
+    background-color: black;
+    color: white;
+    padding: 1.1rem;
+    border-radius: 1px;
+    border: 1rem;
 }
 #hjerte_knapp2{
-    width: 30%;
+    width: 12%;
+    background-color: white;
+    border: 1px #9f9f9f solid;
+}
+
+
+#størelse_valg{
+    justify-content: center;
+    display: flex;
+    select{
+        width: 100%;
+        border-radius: 1px;
+        padding: 1rem;
+        border: 1px #b9adad solid;
+    }
+}
+
+#størelse_valg :hover{
+    border: 1px #000000 solid;
+}
+
+
+details {
+    margin-bottom: 32px; 
+    padding-bottom: 16px; 
+    border-bottom: 1px solid #ccc;
+
+}
+
+details summary {
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+details ul, details p, details table {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+#Stjener_for_andmelser{
+    display: flex;
+}
+#Anmeldelser_kort1{
+    border-bottom: none;
+}
+
+#Metriale_og_vedlikehold{
+    border-top: 1px solid #ccc;
+    margin-bottom: 16px;
+    padding-top: 16px;
+}
+
+#Metriale_og_vedlikehold ul li{
+    list-style: disc;
 }

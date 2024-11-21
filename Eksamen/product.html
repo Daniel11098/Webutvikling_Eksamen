@@ -79,7 +79,7 @@
             <p>Farge: <span id="produkt_farge">Beige </span></p>
             
             <form>
-                <label>
+                <label id="størelse_valg">
                     
                 <select name="choice">
                     <option value="Velg_størelse">Velg størelse</option>
@@ -93,16 +93,16 @@
             </label>
             </form>
             <article id="legg_handle_kurv_knapp">
-                <button>
+                <button id="knapp_kurv">
                     Legg i handle kurven 
                 </button>
-                <button>
+                <button id="hjerte_knapp2">
                     <i class="far fa-heart"></i>
                 </button>
             </article>
             <article>
-                <details>
-                    <summary>Metriale og vedlikehold</summary>
+                <details id="Metriale_og_vedlikehold">
+                    <summary>Metriale og vedlikehold <span class="pluss_ikon"><i class="fa-regular fa-plus"></i></span></summary>
                     <ul>
                         <li>Overmateriale: 95% viskose, 5% elastan</li>
                         <li>Materiale ermer: 100% polyester</li>
@@ -110,11 +110,11 @@
                     </ul>
             </details>
                 <details>
-                    <summary>Produktdetaljer</summary>
+                    <summary>Produktdetaljer <span class="pluss_ikon"><i class="fa-regular fa-plus"></i></span></summary>
                     <p>Es ist ein lang erwiesener Fakt, dass ein Leser vom Text abgelenkt wird, wenn er sich ein Layout ansieht. Der Punkt, Lorem Ipsum zu nutzen, ist, dass es mehr oder weniger die normale Anordnung von Buchstaben darstellt und somit nach lesbarer Sprache aussieht.</p>
                 </details>
                 <details>
-                    <summary>Størrelsestabell</summary>
+                    <summary>Størrelsestabell <span class="pluss_ikon"><i class="fa-regular fa-plus"></i></span></summary>
 
                     <p>Størrelsesinformasjon for produktet</p>
 
@@ -356,8 +356,8 @@
     
             
 
-        <details>
-            <summary><span id="Anmeldelser"> Anmeldelser </span> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 32</summary>
+        <details id="Anmeldelser_kort1">
+            <summary><span id="Anmeldelser"> Anmeldelser </span> <span id="Stjener_for_andmelser"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 32 </span></summary>
     
             
                 <header>
@@ -391,12 +391,16 @@
         <nav>
             <a href="index.html#Våre_mest_populære_produkter">se flere lignende produkter<i class="fa-solid fa-arrow-right"></i></a>
         </nav>
-        <article>
+        <article class="produkt_kort">
+            <button> 
+                <i class="fa-regular fa-heart"></i>
+            </button>
             <figure>
-                <img src="https://picsum.photos/id/22/200/300" alt="picsumbildet">
+                <img src="../Eksamen/bilder/pyramider_egypt.jpg" alt="pyramider_egypt1">
+                <!--image by pixapay https://pixabay.com/photos/camel-desert-pyramid-middle-east-926435/-->
                 <figcaption>
                     <a href="product.html">Product name</a>
-                    <p>kr 1999</p>
+                    <p class="Pris">kr 1999</p>
                     <p>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -408,12 +412,16 @@
                 </figcaption>
             </figure>
         </article>
-        <article>
+        <article class="produkt_kort">
+            <button> 
+                <i class="fa-regular fa-heart"></i>
+            </button>
             <figure>
-                <img src="https://picsum.photos/id/22/200/300" alt="picsumbildet">
+                <img src="../Eksamen/bilder/pyramider_egypt.jpg" alt="pyramider_egypt1">
+                <!--image by pixapay https://pixabay.com/photos/camel-desert-pyramid-middle-east-926435/-->
                 <figcaption>
                     <a href="product.html">Product name</a>
-                    <p>kr 1999</p>
+                    <p class="Pris">kr 1999</p>
                     <p>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -425,12 +433,16 @@
                 </figcaption>
             </figure>
         </article>
-        <article>
+        <article class="produkt_kort">
+            <button> 
+                <i class="fa-regular fa-heart"></i>
+            </button>
             <figure>
-                <img src="https://picsum.photos/id/22/200/300" alt="picsumbildet">
+                <img src="../Eksamen/bilder/pyramider_egypt.jpg" alt="pyramider_egypt1">
+                <!--image by pixapay https://pixabay.com/photos/camel-desert-pyramid-middle-east-926435/-->
                 <figcaption>
                     <a href="product.html">Product name</a>
-                    <p>kr 1999</p>
+                    <p class="Pris">kr 1999</p>
                     <p>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -442,29 +454,16 @@
                 </figcaption>
             </figure>
         </article>
-        <article>
-        <figure>
-            <img src="https://picsum.photos/id/22/200/300" alt="picsumbildet">
-            <figcaption>
-                <a href="product.html">Product name</a>
-                <p>kr 1999</p>
-                <p>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    143 Reviwes
-                </p>
-            </figcaption>
-        </figure>
-        </article>
-        <article>
+        <article class="produkt_kort">
+            <button> 
+                <i class="fa-regular fa-heart"></i>
+            </button>
             <figure>
-                <img src="https://picsum.photos/id/22/200/300" alt="picsumbildet">
+                <img src="../Eksamen/bilder/pyramider_egypt.jpg" alt="pyramider_egypt1">
+                <!--image by pixapay https://pixabay.com/photos/camel-desert-pyramid-middle-east-926435/-->
                 <figcaption>
                     <a href="product.html">Product name</a>
-                    <p>kr 1999</p>
+                    <p class="Pris">kr 1999</p>
                     <p>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -476,12 +475,16 @@
                 </figcaption>
             </figure>
         </article>
-        <article>
+        <article class="produkt_kort">
+            <button> 
+                <i class="fa-regular fa-heart"></i>
+            </button>
             <figure>
-                <img src="https://picsum.photos/id/22/200/300" alt="picsumbildet">
+                <img src="../Eksamen/bilder/pyramider_egypt.jpg" alt="pyramider_egypt1">
+                <!--image by pixapay https://pixabay.com/photos/camel-desert-pyramid-middle-east-926435/-->
                 <figcaption>
                     <a href="product.html">Product name</a>
-                    <p>kr 1999</p>
+                    <p class="Pris">kr 1999</p>
                     <p>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -489,7 +492,28 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-regular fa-star"></i>
                         143 Reviwes
-                </p>
+                    </p>
+                </figcaption>
+            </figure>
+        </article>
+        <article class="produkt_kort">
+            <button> 
+                <i class="fa-regular fa-heart"></i>
+            </button>
+            <figure>
+                <img src="../Eksamen/bilder/pyramider_egypt.jpg" alt="pyramider_egypt1">
+                <!--image by pixapay https://pixabay.com/photos/camel-desert-pyramid-middle-east-926435/-->
+                <figcaption>
+                    <a href="product.html">Product name</a>
+                    <p class="Pris">kr 1999</p>
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        143 Reviwes
+                    </p>
                 </figcaption>
             </figure>
         </article>
