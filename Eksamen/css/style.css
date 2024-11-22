@@ -35,7 +35,7 @@ li{
 #Global_header{
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 2rem;
     flex-direction: column;
 }
 
@@ -43,7 +43,6 @@ li{
 #header_navigeringsliste1{
     display: flex;
     gap: 1rem;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -102,6 +101,7 @@ li{
     height: 60vh;
     padding-right: 20px;
     gap: 20px;
+    position: relative;
 
     h1  {
         display: flex;
@@ -118,7 +118,9 @@ li{
         background-color: rgba(255, 255, 255, 0.8);
         margin-left: 76%;
         border-radius: 24px;
-        align-self: flex-start;
+        position: absolute;
+        bottom: 18px;
+        left: 10%;
         a {
             text-decoration: none;
             color: black;
@@ -600,6 +602,9 @@ details ul, details p, details table {
         margin-bottom: 0;
     }
 }
+.checkout_produktkort{
+    width: 100%;
+}
 
 #Section2_kasse article picture img{
     width: 152px;
@@ -747,4 +752,172 @@ details ul, details p, details table {
 .checkbox_vilkår{
     display: flex;
     justify-content: center;
+}
+
+
+
+
+@media  (min-width: 768px) and (max-width: 1200px){
+        
+    html{
+        font-size: calc(0.5rem + 1vw)
+    }
+    
+    
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    h1{font-size: 1.6rem;}
+    h2{font-size: 1.3rem;}
+    h3{font-size: 1rem;}
+    h4{font-size: 1rem;}
+    p, a{font-size: 0.6rem;}
+    i{font-size: 0.7rem;}
+    #Logo{font-size: 1rem;}
+    
+        #global_container{
+            display: grid;
+            grid-template-columns: 1fr 4fr 1fr;
+            grid-template-rows: auto auto auto;
+        }
+
+        header, main, footer{
+            grid-column: 2/3;
+        }
+        header{
+            grid-row: 1/2;
+        }
+        main{
+            grid-row: 2/3;
+        }
+        footer{
+            grid-row: 3/4;
+        }
+
+        #Global_header {
+            display: flex;
+            flex-direction: row; 
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            
+        }
+        #søkefelt{
+            padding: 0px;
+            display: flex;
+            flex-direction: row;
+        }
+        #søkefelt input {
+            width: 80%;
+            padding: 9px;
+            border: none;
+            border-radius: 16px;
+            font-size: 12px;
+          }
+        #søkefelt button {
+            border: none;
+            padding: 8px 12px;
+            border-radius: 50%;
+            margin-left: 15px;
+            background-color: #f7f7f7;
+          }
+
+    
+        #header_navigeringsliste1, 
+        #header_navigeringsliste2 {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row; 
+            gap: 2rem; 
+            li a:hover{
+                text-decoration: underline;
+            }
+            #Logo1:hover{
+                text-decoration: none;
+            }
+        }
+        #header_navigeringsmeny{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 4rem;
+        }
+        #header_navigeringsliste2{
+            gap: 10px;
+        }
+
+        #Global_footer{
+            display: grid;
+            grid-template-columns: 3fr 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        
+        #footer_logo{
+            grid-column: 1/4;
+            grid-row: 1/2;
+        }
+        #Kontakt_oss{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        #Snarveier{
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        #sosiale_medier{
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+        
+        #Kontakt_oss ul{
+            gap: 1rem;
+            display: flex;
+            text-align: left;
+            flex-direction: column;
+            padding: 1px;
+            li{
+                font-size: 0.8rem;
+            }
+        }
+        
+        #Snarveier ul{
+            gap: 1rem;
+            display: flex;
+            text-align: left;
+            flex-direction: column;
+            padding: 2px;
+        }
+        
+        #sosiale_medier ul{
+            gap: 1rem;
+            display: flex;
+            text-align: center;
+            padding: 2px;
+        }
+        
+        
+        #sosiale_medier ul li a i{
+            font-size: 20px;
+        }
+        
+        .footer_liste a{
+            text-decoration: none;
+            color: #000000;
+        }
+        .footer_liste{
+            gap: 1rem;
+        }
+
+
 }
