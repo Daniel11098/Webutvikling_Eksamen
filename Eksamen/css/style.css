@@ -778,7 +778,7 @@ details ul, details p, details table {
     h4{font-size: 1rem;}
     p, a{font-size: 0.7rem;}
     i{font-size: 0.7rem;}
-    #Logo{font-size: 1rem;}
+    #Logo{font-size: 1.5rem;}
     
         #global_container{
             display: grid;
@@ -786,16 +786,16 @@ details ul, details p, details table {
             grid-template-rows: auto auto auto;
         }
 
-        header, main, footer{
+        #Global_header, #global_main, #Global_footer{
             grid-column: 2/3;
         }
-        header{
+        #Global_header{
             grid-row: 1/2;
         }
-        main{
+        #global_main{
             grid-row: 2/3;
         }
-        footer{
+        #Global_footer{
             grid-row: 3/4;
         }
 
@@ -1046,8 +1046,47 @@ details ul, details p, details table {
                 grid-column: 3/4;
                 grid-row: 5/6;
             }
-    
+        }
 
+        
+        #produkut_container{
+            display: grid;
+            grid-template-columns: 0.5fr 5fr 0.5fr;
+            grid-template-rows: auto auto auto auto auto;
+
+        }
+        #Global_header ,#breadcrumb1, #produktsiden_main,#aside_container ,#Global_footer{
+            grid-column: 2/3;
+        }
+        #Global_header{
+            grid-row: 1/2;
+        }
+        #breadcrumb1{
+            grid-row: 2/3;
+        }
+        #produktsiden_main{
+            grid-row: 3/4;
+        }
+        #aside_container{
+            grid-row: 4/5;
+        }
+        #Global_footer{
+            grid-row: 5/6;
+        }
+
+
+        #produktsiden_main{
+            display: flex;
+            gap: 1rem;
+        }
+
+        #bilder_for_produktsiden{
+            max-width: 700px;
+        }
+
+        #info_om_produkte{
+            max-width: 100%;
+            width: 440px;
         }
 
 
