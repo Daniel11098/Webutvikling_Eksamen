@@ -458,10 +458,6 @@ li{
     }
 }
 
-#størelse_valg :hover{
-    border: 1px #000000 solid;
-}
-
 
 details {
     margin-bottom: 32px; 
@@ -597,15 +593,18 @@ details ul, details p, details table {
     article p i{
         font-size: 1.2rem;
     }
-    article h3{
+    article figure figcaption h3{
         margin-bottom: 0;
     }
 }
 .checkout_produktkort{
     width: 100%;
 }
+#Section2_kasse article figure{
+    margin: 0;
+}
 
-#Section2_kasse article picture img{
+#Section2_kasse article figure picture img{
     width: 152px;
     height: 184px;
     max-width: 100%;
@@ -613,7 +612,7 @@ details ul, details p, details table {
     margin-left: 0;
 
 }
-#Section2_kasse article form label select{
+#Section2_kasse article figure figcaption form label select{
     border: 1px solid white;
     padding: 10px;
 }
@@ -1088,6 +1087,118 @@ details ul, details p, details table {
             max-width: 100%;
             width: 440px;
         }
+        
+        h2 {
+            font-size: 1rem;
+          }
+        
 
+        #bilder_for_produktsiden {
+            max-width: 570px;
+            width: 100%;
+        }
+          .Produktnavn_breadcrumb {
+            font-weight: bolder;
+            font-size: 0.8rem;
+        }
+        #info_om_produkte{
+            gap:0.6rem;
+        }
+
+        #info_om_produkte details summary{
+            font-size: 0.7rem;
+        }
+        details {
+            padding-bottom: 32px
+        }
+
+        #størelse_valg :hover {
+            border: 2px #000 solid;
+        }
+        #info_om_produkte #legg_handle_kurv_knapp #knapp_kurv:hover{
+            background-color: #685f5f;
+        }
+        #info_om_produkte #hjerte_knapp2{
+            width: 16%;
+        }
+
+        #info_om_produkte #hjerte_knapp2 i:hover{
+            color: #e83e3e;
+        }
+
+        #Metriale_og_vedlikehold ul li {
+            font-size: 0.7rem;
+        }
+        details p, details table {
+            margin-top: 8px;
+            font-size: 0.6rem;
+            line-height: 1.4;
+        }
+        .produkt_kort2{
+            width: 21%;
+        }
+
+        #checkout_container{
+            display: grid;
+            grid-template-columns: 0.5fr 5fr 0.5fr;
+            grid-template-rows: auto auto auto;
+        }
+
+        #Global_header, #main_checkout, #Global_footer{
+            grid-column: 2/3 ;
+        }
+        
+        #Global_header{
+            grid-row: 1/2;
+        }
+
+        #main_checkout{
+            grid-row: 2/3;
+        }
+
+        #Global_footer{
+            grid-row: 3/4;
+        }
+
+        #Section2_kasse{
+            border: 2px #f2f1f1 solid;
+            gap: 1rem;
+            h2{
+                justify-content: center;
+                display: flex;
+            }
+
+
+        }
+        .checkout_produktkort{
+            display: flex;
+            justify-content: center;
+            figure{
+                display: flex;
+                figcaption {
+                    margin-top: 2rem;
+                }
+
+                figcaption ul li{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+        #Section2_kasse article figure picture img{
+            width: 260px;
+            height: 250px;
+            margin: 0;
+        }
+        #Section2_kasse article figure figcaption form label{
+            font-size: 0.8rem;
+        }
+        #Section2_kasse article p{
+            display: flex;
+            flex-direction: column;
+            margin-top: 3rem;
+            i{
+                font-size: 0.8rem;
+            }
+        }
 
 }
