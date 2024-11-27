@@ -626,11 +626,13 @@ details ul, details p, details table {
     flex-direction: column;
 
     label{
+        display: flex;
+        flex-direction: column;
         font-weight: bolder;
     }
     input{
         border: 2px solid #dfdfdf;
-        padding: 7px
+        padding: 11px
     }
 }
 #Section3_kasse h3{
@@ -658,7 +660,7 @@ details ul, details p, details table {
     flex-direction: column;
     input{
         border: 2px solid #dfdfdf;
-        padding: 7px
+        padding: 11px
     }
 }
 
@@ -696,35 +698,50 @@ details ul, details p, details table {
 #Section5_kasse{
     display: flex;
     flex-direction: column;
-    article{
+    #betalingsskjema1{
         display: flex;
         flex-direction: column;
         margin: 1rem;
+        label{
+            display: flex;
+            flex-direction: column;
+        }
         input{
             border: 2px solid #dfdfdf;
             padding: 8px;
         }
+    }
+    #Total_pris1{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
         p{
             display: flex;
             justify-content: center;
-            margin-bottom: 1rem;
-            margin-top: 2rem;
         }
     }
 }
-#Utløpsdato{
-    display: flex;
-    flex-direction: column;
+#utlopsdato1 {
     position: relative;
+    display: inline-block;
+    width: 100%;
 }
 
-#Utløpsdato i {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    font-size: 1.5rem;
-    color: #666; 
+#utlopsdato {
+    width: 100%; 
+    padding-right: 2.5rem; 
+    box-sizing: border-box; 
 }
+
+#utlopsdato1 i {
+    position: absolute;
+    right: 0.8rem;
+    top: 47%;
+    pointer-events: none;
+    color: #999;
+    font-size: 1.4rem;
+}
+
 #Fullfør_kjøp_knapp{
     display: flex;
     justify-content: center;
@@ -1162,10 +1179,11 @@ details ul, details p, details table {
 
         #Section2_kasse{
             border: 2px #f2f1f1 solid;
-            gap: 1rem;
+            gap: 0;
             h2{
                 justify-content: center;
                 display: flex;
+                margin-right: 19rem;
             }
 
 
@@ -1185,8 +1203,8 @@ details ul, details p, details table {
             }
         }
         #Section2_kasse article figure picture img{
-            width: 260px;
-            height: 250px;
+            width: 218px;
+            height: 235px;
             margin: 0;
         }
         #Section2_kasse article figure figcaption form label{
@@ -1200,5 +1218,165 @@ details ul, details p, details table {
                 font-size: 0.8rem;
             }
         }
+
+        #antall2, #antall, #antall3 {
+            width: 58px;
+            text-align: center;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 0px;
+            padding: 10px;
+        }
+
+        #Section3_kasse{
+            border: 2px #f2f1f1 solid;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            h2{
+                justify-content: center;
+                display: flex;
+                margin-right: 28rem;
+            }
+        }
+        #leverings_adressen{
+            flex-direction: column;
+            display: flex;
+            margin: 0;
+            h3{
+                width: 100%;
+                display: flex;
+                margin-left: 4rem;
+                flex-wrap: wrap;
+            }
+        }
+        #Form_dine_opplysninger{
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+
+            label{
+                font-weight: normal;
+            }
+
+            #fornavn1{
+                width: 40%;
+            }
+            #etternavn1{
+                width: 40%;
+            }
+            #gateadresse1{
+                width: 83%;
+            }
+            #postnummer1{
+                width: 40%;
+            }
+            #Poststed1{
+                width: 40%;
+            }
+        }
+        
+        #form_kontaktinformasjon{
+            align-items: center;
+            label{
+                width: 83%;
+            }
+        }
+        #Kontaktinformasjon h3{
+            margin-left: 3.7rem;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #knapper{
+            display: flex;
+            flex-direction: column;
+
+        }
+        #lagre_knapp{
+            width: 83%;
+            align-self: center;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #Section4_kasse{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            border: 2px #f2f1f1 solid;
+            margin: 0;
+            margin-top: 3rem;
+            form{
+                align-items: center;
+                margin-bottom: 1rem;
+            }
+            h2{
+                margin-right: 36rem;
+            }
+            h3{
+                margin-right: 34rem;
+            }
+        }
+        .Levering{
+            width: 83%;
+            padding: 1rem;
+            span{
+                font-size: 0.7rem;
+                color: #a69090;
+            }
+        }
+        #Section5_kasse{
+            border: 2px #f2f1f1 solid;
+            margin-top: 1rem;
+            align-items: center;
+            h2{
+                margin-right: 34rem;
+            }
+        }
+        #betalingsskjema{
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+        #betalingsskjema article label{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 83%;
+            i{
+                font-size: 1rem;
+            }
+            input{
+                padding: 11px;
+            }
+        }
+        #betalingsskjema1{
+            flex-direction: row !important;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            #kortnummer1{
+                width: 83%;
+            }
+            #utlopsdato1{
+                width: 40%;
+            }
+            #cvc1{
+                width: 40%;
+            }
+        }
+        #Total_pris1{
+            align-items: center;
+        }
+        
+        
+        #Fullfør_kjøp_knapp{
+            width: 83%;
+        }
+
+
 
 }

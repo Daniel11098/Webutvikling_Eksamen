@@ -158,23 +158,24 @@
             </section>
             <section id="Section3_kasse">
                 <h2>2. Dine opplysninger</h2>
-                <article>
+                <article id="leverings_adressen">
                     <h3>Leverings adressen</h3>
                     <form method="post" id="Form_dine_opplysninger">
-                        <label for="fornavn">Fornavn</label>
-                        <input type="text" name="Fornavn" placeholder="Daniel" id="fornavn" maxlength="30" required title="Fornavn">
-
-                        <label for="etternavn">Etternavn</label>
-                        <input type="text" name="Etternavn" placeholder="Azam" id="etternavn" maxlength="30" required title="Etternavn">
-
-                        <label for="gateadresse">Gatteadresse</label>
-                        <input type="text" name="gateadresse" placeholder="Holmliaveien 26" id="gateadresse" maxlength="50" required title="Vennligst skriv inn din gateadresse">
-
-                        <label for="postnummer">Postnummer</label>
-                        <input type="number" id="postnummer" name="postnummer" placeholder="1752" required min="1000" max="9999" title="Vennligst skriv inn din postnummer">
-
-                        <label for="Poststed">Poststed</label>
-                        <input type="text" name="Poststed" placeholder="Oslo" id="Poststed" maxlength="50" required title="Vennligst skriv inn ditt Poststed">
+                        <label id="fornavn1" for="fornavn">Fornavn
+                            <input type="text" name="Fornavn" placeholder="Daniel" id="fornavn" maxlength="30" required title="Fornavn">
+                        </label>                        
+                        <label id="etternavn1" for="etternavn">Etternavn
+                            <input type="text" name="Etternavn" placeholder="Azam" id="etternavn" maxlength="30" required title="Etternavn">
+                        </label>
+                        <label id="gateadresse1" for="gateadresse">Gatteadresse
+                            <input type="text" name="gateadresse" placeholder="Holmliaveien 26" id="gateadresse" maxlength="50" required title="Vennligst skriv inn din gateadresse">
+                        </label>
+                        <label id="postnummer1" for="postnummer">Postnummer
+                            <input type="number" id="postnummer" name="postnummer" placeholder="1752" required min="1000" max="9999" title="Vennligst skriv inn din postnummer">
+                        </label>
+                        <label id="Poststed1" for="Poststed">Poststed
+                            <input type="text" name="Poststed" placeholder="Oslo" id="Poststed" maxlength="50" required title="Vennligst skriv inn ditt Poststed">
+                        </label>
                     </form>
                 </article>
                 <article id="Kontaktinformasjon">
@@ -190,6 +191,8 @@
                         </label>
                         
                     </form>
+                </article>
+                <article id="knapper">
                     <a id="lagre_knapp" href="#">Lagre</a>
                     <a id="Avbryt_knapp" href="#">Avbryt</a>
                 </article>
@@ -234,18 +237,22 @@
                 <h2>4. Betaling</h2>
 
                 <form id="betalingsskjema">
-                    <article>
+                    <article id="betalingsskjema1" >
                         <h3>Betal med kort <i class="fa-solid fa-credit-card"></i></h3>
-                        <label for="kortnummer">Kortnummer</label>
-                        <input type="number" id="kortnummer" name="kortnummer" placeholder="123456789" required title="Skriv inn ditt kortnummer">
-                        
-                        <label for="utlopsdato" id="Utløpsdato">Utløpsdato (MM/ÅÅ)
-                            <i class="fa-regular fa-calendar"></i>
-                            <input type="text" id="utlopsdato" name="utlopsdato" placeholder="MM/ÅÅ" required pattern="\d{2}/\d{2}" title="Fyll inn utlopsdato på ditt kort"> 
+                        <label id="kortnummer1" for="kortnummer">Kortnummer
+                            <input type="number" id="kortnummer" name="kortnummer" placeholder="123456789" required title="Skriv inn ditt kortnummer">
                         </label>
                         
-                        <label for="cvc">CVC/CVV</label>
-                        <input type="text" id="cvc" name="cvc" placeholder="123" required pattern="\d{3}" title="fyll inn de tre bakerste kodene i bak i kortet ditt">
+                        <label id="utlopsdato1" for="utlopsdato" id="Utløpsdato">Utløpsdato (MM/ÅÅ)
+                            <input type="text" id="utlopsdato" name="utlopsdato" placeholder="MM/ÅÅ" required pattern="\d{2}/\d{2}" title="Fyll inn utlopsdato på ditt kort"> 
+                            <i class="fa-regular fa-calendar"></i>
+                        </label>
+                        
+                        <label id="cvc1" for="cvc">CVC/CVV
+                            <input type="text" id="cvc" name="cvc" placeholder="123" required pattern="\d{3}" title="fyll inn de tre bakerste kodene i bak i kortet ditt">
+                        </label>
+                    </article>
+                    <article id="Total_pris1">       
                         <p>Å betale inkl. mva.</p>
                         <span id="Total_pris">1199 kr</span>
                     
