@@ -91,8 +91,8 @@ li{
     margin-left: 10px;
   }
 
-#banner {
-    display: flex;
+#banner #slide11{
+    display: flex !important;
     flex-wrap: wrap;
     background-image: url("../bilder/strand_bildet_eksamen11.jpg");
     flex-direction: column;
@@ -105,10 +105,13 @@ li{
     background-size: cover; 
     background-position: center; 
     color: white; 
+    }
 
-}
+    #banner #slide22, #slide33{
+        display: none;
+    }
 
-#banner h1 {
+#banner #slide11 h2 {
     margin: 0 auto; /* Fjern fast margin og sentrer horisontalt */
     max-width: 90%; /* Sørger for at teksten ikke strekker seg utenfor */
     text-align: right;
@@ -116,14 +119,14 @@ li{
     color: black;
 }
 
-#banner p {
+#banner #slide11 p {
     max-width: 98%;
     text-align: right;
     color: black;
     margin: 0 auto;
 }
 
-#banner nav {
+#banner  #slide11 nav{
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 24px;
     position: absolute;
@@ -132,7 +135,7 @@ li{
     padding: 10px 20px;
 }
 
-#banner nav a {
+#banner #slide11 nav a{
     text-decoration: none;
     color: black;
     padding: 10px;
@@ -552,13 +555,10 @@ details ul, details p, details table {
 }
 
 .produkt_kort2 button i {
-    color: #ffffff80 ;
+    color: #fff ;
     font-size: 16px;
 }
 
-.produkt_kort2 button i:hover {
-    color: #ff000080;
-}
 #Section1_kasse nav a{
     text-decoration: none;
     i{
@@ -872,14 +872,6 @@ details ul, details p, details table {
             gap: 10px;
         }
 
-        #banner nav {
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 24px;
-            position: absolute;
-            bottom: 69px;
-            left: 81%;
-            padding: 10px 20px;
-          }
 
         #Global_footer{
             display: grid;
@@ -1154,6 +1146,13 @@ details ul, details p, details table {
         .produkt_kort2{
             width: 21%;
         }
+        .produkt_kort2 button i {
+            color: #fff;
+            font-size: 16px;
+          }
+        .produkt_kort2 button:hover {
+            background-color: #ff393980;
+        }
 
         #checkout_container{
             display: grid;
@@ -1173,7 +1172,7 @@ details ul, details p, details table {
             grid-row: 2/3;
         }
 
-        #Global_footer{
+        #checkout_container #Global_footer{
             grid-row: 3/4;
         }
 
@@ -1279,6 +1278,7 @@ details ul, details p, details table {
         
         #form_kontaktinformasjon{
             align-items: center;
+            gap: 1rem;
             label{
                 width: 83%;
             }
@@ -1308,7 +1308,7 @@ details ul, details p, details table {
             align-items: center;
             border: 2px #f2f1f1 solid;
             margin: 0;
-            margin-top: 3rem;
+            margin-top: 1rem;
             form{
                 align-items: center;
                 margin-bottom: 1rem;
@@ -1376,7 +1376,166 @@ details ul, details p, details table {
         #Fullfør_kjøp_knapp{
             width: 83%;
         }
+        #vilkår_artikkel{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            margin: 1rem 3.6rem;
+        }
+        #vilkår_artikkel .checkbox_vilkår{
+            display: flex;
+            flex-direction: row;
+        }
 
+        #banner {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            overflow-x: auto;
+            width: 112%;
+            max-width: 988px;
+        }
 
+        #banner article{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            text-align: right;
+            border-radius: 12px;
+            height: 60vh;
+            padding: 20px; 
+            gap: 40px;
+            position: relative;
+            background-size: cover; 
+            background-position: center; 
+            color: white; 
+            width: 1000px;
+            }
+        #banner #slide11{
+            background-image: url("../bilder/strand_bildet_eksamen11.jpg");
+            display: flex !important;
+        }
+        #banner #slide22{
+            display: flex !important;
+            background-image: url("../bilder/midtøsten.jpg");
+        }
+        #banner #slide33{
+            background-image: url("../bilder/havet_i_Egypt.jpg");
+        }
+        
+        #banner #slide11{
+            display: flex !important;
+            flex-wrap: wrap;
+            flex-direction: column;
+            text-align: right;
+            border-radius: 12px;
+            height: 60vh;
+            padding: 20px; 
+            gap: 40px;
+            position: relative;
+            background-size: cover; 
+            background-position: center; 
+            color: white; 
+            width: 1000px;
+        }
+        #banner article{
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        
+        #banner #slide11 h2 {
+            margin: 0 auto; /* Fjern fast margin og sentrer horisontalt */
+            max-width: 90%; /* Sørger for at teksten ikke strekker seg utenfor */
+            text-align: right;
+            word-wrap: break-word; /* Bryt lange ord */
+            color: black;
+        }
+        #banner #slide22 h2 {
+            margin: 0 auto; /* Fjern fast margin og sentrer horisontalt */
+            max-width: 90%; /* Sørger for at teksten ikke strekker seg utenfor */
+            text-align: right;
+            word-wrap: break-word; /* Bryt lange ord */
+            color: black;
+        }
+        #banner #slide33 h2 {
+            margin: 0 auto; /* Fjern fast margin og sentrer horisontalt */
+            max-width: 90%; /* Sørger for at teksten ikke strekker seg utenfor */
+            text-align: right;
+            word-wrap: break-word; /* Bryt lange ord */
+            color: black;
+        }
+        
+        #banner #slide11 p {
+            max-width: 98%;
+            text-align: right;
+            color: black;
+            margin: 0 auto;
+        }
 
-}
+        #banner #slide22 p {
+            max-width: 98%;
+            text-align: right;
+            color: black;
+            margin: 0 auto;
+        }
+
+        #banner #slide33 p {
+            max-width: 98%;
+            text-align: right;
+            color: black;
+            margin: 0 auto;
+        }
+        
+        
+        
+        #banner  #slide11 nav {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 24px;
+            position: absolute;
+            bottom: 37px;
+            left: 70%;
+            padding: 10px 20px;
+        }
+
+        #banner  #slide22 nav {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 24px;
+            position: absolute;
+            bottom: 37px;
+            left: 70%;
+            padding: 10px 20px;
+        }
+        #banner  #slide33 nav {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 24px;
+            position: absolute;
+            bottom: 37px;
+            left: 70%;
+            padding: 10px 20px;
+        }
+        
+        #banner #slide11 nav a {
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            font-weight: bolder;
+            display: inline-block;
+        }
+
+        #banner #slide22 nav a {
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            font-weight: bolder;
+            display: inline-block;
+        }
+
+        #banner #slide33 nav a {
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            font-weight: bolder;
+            display: inline-block;
+        }
+    }
