@@ -94,7 +94,8 @@ li{
 #banner #slide11{
     display: flex !important;
     flex-wrap: wrap;
-    background-image: url("../bilder/strand_bildet_eksamen11.jpg");
+    background-image: url("../bilder/havet_i_Syria.jpg");
+    /*image by pixapay https://pixabay.com/photos/sunset-rocks-beach-dusk-twilight-1985086/*/
     flex-direction: column;
     text-align: right;
     border-radius: 12px;
@@ -1389,12 +1390,10 @@ details ul, details p, details table {
         }
 
         #banner {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            overflow-x: auto;
-            width: 112%;
+            overflow: auto;
+            width: 100%;
             max-width: 988px;
+            display: block ruby;
         }
 
         #banner article{
@@ -1412,79 +1411,78 @@ details ul, details p, details table {
             color: white; 
             width: 1000px;
             }
-        #banner #slide11{
-            background-image: url("../bilder/strand_bildet_eksamen11.jpg");
-            display: flex !important;
-        }
+            
         #banner #slide22{
             display: flex !important;
-            background-image: url("../bilder/midtøsten.jpg");
+            background-image: url("../bilder/sol_nedgang.jpg");
+            /*image by pixapay https://pixabay.com/photos/safari-nature-sunset-tree-wildlife-7486578/*/
         }
         #banner #slide33{
-            background-image: url("../bilder/havet_i_Egypt.jpg");
+            background-image: url("../bilder/tre_pyramidene.jpg");
+            /*Image from https://pixabay.com/photos/pyramids-egypt-giza-archeology-2159286/*/
         }
-        
-        #banner #slide11{
-            display: flex !important;
-            flex-wrap: wrap;
-            flex-direction: column;
-            text-align: right;
-            border-radius: 12px;
-            height: 60vh;
-            padding: 20px; 
-            gap: 40px;
-            position: relative;
-            background-size: cover; 
-            background-position: center; 
-            color: white; 
-            width: 1000px;
-        }
+
         #banner article{
             flex: 0 0 100%;
             max-width: 100%;
         }
         
         #banner #slide11 h2 {
-            margin: 0 auto; /* Fjern fast margin og sentrer horisontalt */
-            max-width: 90%; /* Sørger for at teksten ikke strekker seg utenfor */
+            max-width: 400px;
             text-align: right;
-            word-wrap: break-word; /* Bryt lange ord */
+            word-wrap: break-word;
             color: black;
+            margin-right: 35px;
+            font-size: 1.7rem;
         }
         #banner #slide22 h2 {
-            margin: 0 auto; /* Fjern fast margin og sentrer horisontalt */
-            max-width: 90%; /* Sørger for at teksten ikke strekker seg utenfor */
-            text-align: right;
-            word-wrap: break-word; /* Bryt lange ord */
-            color: black;
+            max-width: 400px;
+            text-align: left;
+            word-wrap: break-word;
+            margin-left: 2rem;
+            font-size: 1.7rem;
+            margin-top: 0;
+            color: #ffeded;
+            margin-bottom: 0;
         }
         #banner #slide33 h2 {
-            margin: 0 auto; /* Fjern fast margin og sentrer horisontalt */
-            max-width: 90%; /* Sørger for at teksten ikke strekker seg utenfor */
-            text-align: right;
-            word-wrap: break-word; /* Bryt lange ord */
-            color: black;
+            max-width: 400px;
+            text-align: left;
+            word-wrap: break-word;
+            margin-left: 2rem;
+            font-size: 1.7rem;
+            margin-top: 0;
+            color: #ffeded;
+            margin-bottom: 0;
         }
         
         #banner #slide11 p {
-            max-width: 98%;
+            max-width: 40%;
             text-align: right;
             color: black;
-            margin: 0 auto;
+            margin-right: 2rem;
         }
 
         #banner #slide22 p {
-            max-width: 98%;
-            text-align: right;
+            max-width: 40%;
+            text-align: left;
             color: black;
-            margin: 0 auto;
+            margin-right: 2rem;
+            margin: 0;
+            margin-right: 2rem;
+            color: #ffeded;
+            margin-left: 2rem;
         }
 
         #banner #slide33 p {
-            max-width: 98%;
-            text-align: right;
+            max-width: 40%;
+            text-align: left;
             color: black;
-            margin: 0 auto;
+            margin-right: 2rem;
+            margin: 0;
+            margin-right: 2rem;
+            color: #ffeded;
+            margin-left: 2rem;
         }
         
         
@@ -1493,25 +1491,25 @@ details ul, details p, details table {
             background-color: rgba(255, 255, 255, 0.8);
             border-radius: 24px;
             position: absolute;
-            bottom: 37px;
-            left: 70%;
+            bottom: 38px;
+            left: 83%;
             padding: 10px 20px;
         }
 
         #banner  #slide22 nav {
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(0, 0, 0, 0.8);
             border-radius: 24px;
             position: absolute;
-            bottom: 37px;
-            left: 70%;
+            bottom: 38px;
+            left: 6%;
             padding: 10px 20px;
         }
         #banner  #slide33 nav {
             background-color: rgba(255, 255, 255, 0.8);
             border-radius: 24px;
             position: absolute;
-            bottom: 37px;
-            left: 70%;
+            bottom: 38px;
+            left: 6%;
             padding: 10px 20px;
         }
         
@@ -1525,7 +1523,7 @@ details ul, details p, details table {
 
         #banner #slide22 nav a {
             text-decoration: none;
-            color: black;
+            color: rgb(255, 255, 255);
             padding: 10px;
             font-weight: bolder;
             display: inline-block;
@@ -1533,7 +1531,7 @@ details ul, details p, details table {
 
         #banner #slide33 nav a {
             text-decoration: none;
-            color: black;
+            color: rgb(0, 0, 0);
             padding: 10px;
             font-weight: bolder;
             display: inline-block;
