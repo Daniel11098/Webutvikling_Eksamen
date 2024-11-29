@@ -376,6 +376,10 @@ li{
     padding: 2px;
 }
 
+#hopp_til_toppen{
+    text-decoration: none;
+    margin-top: 2rem;
+}
 #sosiale_medier ul{
     gap: 3rem;
     display: flex;
