@@ -235,7 +235,21 @@ li{
     font-size: 18px;
 }
 
+#Våre_med_populære_kategorier{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+}
 
+#Våre_med_populære_kategorier h2{
+    grid-column: 1/2;
+    grid-row: 1;
+}
+
+#Våre_med_populære_kategorier p{
+    grid-column: 1/2;
+    grid-row: 2;
+}
 
 #Våre_med_populære_kategorier{
     display: flex;
@@ -259,26 +273,36 @@ li{
 #Kategori1{
     background-image: url(../bilder/masse_randome_ting.png);
     /*Image from https://picsum.photos/images*/
+    grid-column: 1/2;
+    grid-row: 3;
 }
 
 #Kategori2{
     background-image: url(../bilder/dame_sko.png);
     /*Image from https://picsum.photos/images*/
+    grid-column: 1/2;
+    grid-row: 4;
 }
 
 #Kategori3{
     background-image: url(../bilder/bok.png);
     /*Image from https://picsum.photos/images*/
+    grid-column: 1/2;
+    grid-row: 5;
 }
 
 #Kategori4{
     background-image: url(../bilder/Trær.png);
     /*Image from https://picsum.photos/images*/
+    grid-column: 1/2;
+    grid-row: 6;
 }
 
 #Kategori5{
     background-image: url(../bilder/vei_iskogen.png);
     /*Image from https://picsum.photos/images*/
+    grid-column: 1/2;
+    grid-row: 7;
 }
 
 #Våre_med_populære_kategorier article h3{
