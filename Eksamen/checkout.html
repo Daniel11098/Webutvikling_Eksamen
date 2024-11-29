@@ -54,24 +54,24 @@
         <main id="main_checkout">
             <section id="Section1_kasse">
                 <nav>
-                    <a href="index.html"><i class="fa-solid fa-arrow-left"></i> forsett å handle</a>
+                    <a href="index.html" aria-label="navigerer tilbake til forsiden"><i class="fa-solid fa-arrow-left"></i> forsett å handle</a>
                 </nav>
                 <h1>Kasse</h1>
             </section>
             <section id="Section2_kasse">
                 <h2>1.Shoppingen din</h2>
-                <article class="checkout_produktkort">
+                <article class="checkout_produktkort" aria-label="produktkort">
                     <figure>
                         <picture>
-                            <img src="../Eksamen/bilder/bride_pic.jpg" alt="produkbildet">
+                            <img src="../Eksamen/bilder/bride_pic.jpg" alt="produkbildet" aria-label="bildet av produkte">
                         </picture>
                         <figcaption>
-                            <h3>Product Name</h3>
-                            <ul>
+                            <h3 aria-label="navn på produkte">Product Name</h3>
+                            <ul aria-label="pris og farge på produkte">
                                 <li>Kr 1999</li>
                                 <li>Farge Beige</li>
                             </ul>
-                            <form>
+                            <form aria-label="viser tilgjenlige størelser">
                                 <label>
                                     Størelse
                                 <select name="Størelse">
@@ -82,7 +82,7 @@
                                     <option value="XL">XL</option>
                                 </select>
                                 </label>
-                                <label for="antall"> Antall
+                                <label for="antall" aria-label="antall produkter kunden ønsker å kjøpe"> Antall
                                     <input type="number" id="antall" name="antall" value="1" min="1" aria-label="Antall">
                                 </label>                                            
                             </form>
@@ -158,53 +158,52 @@
                         </p>
                 </article>
             </section>
-            <section id="Section3_kasse">
+            <section id="Section3_kasse" aria-label="Dine opplysninger">
                 <h2>2. Dine opplysninger</h2>
-                <article id="leverings_adressen">
+                <article id="leverings_adressen" aria-label="Leveringsadresse">
                     <h3>Leverings adressen</h3>
                     <form method="post" id="Form_dine_opplysninger">
                         <label id="fornavn1" for="fornavn">Fornavn
-                            <input type="text" name="Fornavn" placeholder="Daniel" id="fornavn" maxlength="30" required title="Fornavn">
+                            <input type="text" name="Fornavn" placeholder="Daniel" id="fornavn" maxlength="30" required title="Fornavn" aria-label="Fornavn">
                         </label>                        
                         <label id="etternavn1" for="etternavn">Etternavn
-                            <input type="text" name="Etternavn" placeholder="Azam" id="etternavn" maxlength="30" required title="Etternavn">
+                            <input type="text" name="Etternavn" placeholder="Azam" id="etternavn" maxlength="30" required title="Etternavn" aria-label="Etternavn">
                         </label>
-                        <label id="gateadresse1" for="gateadresse">Gatteadresse
-                            <input type="text" name="gateadresse" placeholder="Holmliaveien 26" id="gateadresse" maxlength="50" required title="Vennligst skriv inn din gateadresse">
+                        <label id="gateadresse1" for="gateadresse">Gateadresse
+                            <input type="text" name="gateadresse" placeholder="Holmliaveien 26" id="gateadresse" maxlength="50" required title="Vennligst skriv inn din gateadresse" aria-label="Gateadresse">
                         </label>
                         <label id="postnummer1" for="postnummer">Postnummer
-                            <input type="number" id="postnummer" name="postnummer" placeholder="1752" required min="1000" max="9999" title="Vennligst skriv inn din postnummer">
+                            <input type="number" id="postnummer" name="postnummer" placeholder="1752" required min="1000" max="9999" title="Vennligst skriv inn din postnummer" aria-label="Postnummer">
                         </label>
                         <label id="Poststed1" for="Poststed">Poststed
-                            <input type="text" name="Poststed" placeholder="Oslo" id="Poststed" maxlength="50" required title="Vennligst skriv inn ditt Poststed">
+                            <input type="text" name="Poststed" placeholder="Oslo" id="Poststed" maxlength="50" required title="Vennligst skriv inn ditt Poststed" aria-label="Poststed">
                         </label>
                     </form>
                 </article>
-                <article id="Kontaktinformasjon">
+                <article id="Kontaktinformasjon" aria-label="Kontaktinformasjon">
                     <h3>Kontaktinformasjon</h3>
                     <form method="post" id="form_kontaktinformasjon">
                         <label>
                             E-post 
-                            <input type="email" name="email" placeholder="Eksempelhiof@.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required title="Skriv inn din E-post">
+                            <input type="email" name="email" placeholder="Eksempelhiof@.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required title="Skriv inn din E-post" aria-label="E-post">
                         </label>
                         <label>
                             Telefon
-                            <input type="tel" name="mobilnummer" placeholder="93991009" pattern="^[0-9]{8}$" required title="Skriv inn din Telefon Nummer">
+                            <input type="tel" name="mobilnummer" placeholder="93991009" pattern="^[0-9]{8}$" required title="Skriv inn din Telefon Nummer" aria-label="Telefonnummer">
                         </label>
-                        
                     </form>
                 </article>
-                <article id="knapper">
+                <article id="knapper" aria-label="Handlinger">
                     <a id="lagre_knapp" href="#">Lagre</a>
                     <a id="Avbryt_knapp" href="#">Avbryt</a>
                 </article>
             </section>
-            <section id="Section4_kasse">
-                <h2>3. Levering</h2>
             
+            <section id="Section4_kasse" aria-label="Levering">
+                <h2>3. Levering</h2>
                 <h3>Leveringsvalg</h3>
                 <form>
-                    <article class="Levering">
+                    <article class="Levering" aria-label="Express Hjemlevering">
                         <label>
                             <input type="radio" name="valg" value="express-hjem" required>
                             Express Hjemlevering
@@ -213,8 +212,8 @@
                         <span>3-4 Virkedager</span>
                         <p>Bestill hverdag før 08:00* for levering neste arbeidsdag. Levers hjem til deg før frokost mandag til lørdag. *For levering til postnummer 4000-7999 er leveringstiden 2 arbeidsdager, for postnummer 8000-9999 er leveringstiden 3 arbeidsdager.</p>
                     </article>
-                    
-                    <article class="Levering">
+            
+                    <article class="Levering" aria-label="Express pakke til utleveringssted">
                         <label>
                             <input type="radio" name="valg" value="express-utlevering" required>
                             Express pakke til utleveringssted
@@ -222,8 +221,8 @@
                         <p>59 kr <i class="fa-brands fa-dhl"></i></p>
                         <span>1-3 Virkedager</span>
                     </article>
-                    
-                    <article class="Levering">
+            
+                    <article class="Levering" aria-label="Standard hjemlevering">
                         <label>
                             <input type="radio" name="valg" value="standard-hjem" required>
                             Standard hjemlevering
@@ -235,51 +234,51 @@
                 </form>
             </section>
             
-            <section id="Section5_kasse">
+            <section id="Section5_kasse" aria-label="Betaling">
                 <h2>4. Betaling</h2>
-
+            
                 <form id="betalingsskjema">
-                    <article id="betalingsskjema1" >
+                    <article id="betalingsskjema1" aria-label="Betaling med kort">
                         <h3>Betal med kort <i class="fa-solid fa-credit-card"></i></h3>
                         <label id="kortnummer1" for="kortnummer">Kortnummer
-                            <input type="number" id="kortnummer" name="kortnummer" placeholder="123456789" required title="Skriv inn ditt kortnummer">
+                            <input type="number" id="kortnummer" name="kortnummer" placeholder="123456789" required title="Skriv inn ditt kortnummer" aria-label="Kortnummer">
                         </label>
-                        
+            
                         <label id="utlopsdato1" for="utlopsdato">Utløpsdato (MM/ÅÅ)
-                            <input type="text" id="utlopsdato" name="utlopsdato" placeholder="MM/ÅÅ" required pattern="\d{2}/\d{2}" title="Fyll inn utlopsdato på ditt kort"> 
+                            <input type="text" id="utlopsdato" name="utlopsdato" placeholder="MM/ÅÅ" required pattern="\d{2}/\d{2}" title="Fyll inn utlopsdato på ditt kort" aria-label="Utløpsdato">
                             <i class="fa-regular fa-calendar"></i>
                         </label>
-                        
+            
                         <label id="cvc1" for="cvc">CVC/CVV
-                            <input type="text" id="cvc" name="cvc" placeholder="123" required pattern="\d{3}" title="fyll inn de tre bakerste kodene i bak i kortet ditt">
+                            <input type="text" id="cvc" name="cvc" placeholder="123" required pattern="\d{3}" title="Fyll inn de tre bakerste kodene i bak i kortet ditt" aria-label="CVC">
                         </label>
                     </article>
-                    <article id="Total_pris1">       
+                    <article id="Total_pris1" aria-label="Totalt beløp">
                         <p>Å betale inkl. mva.</p>
                         <span id="Total_pris">1199 kr</span>
-                    
+            
                         <button type="submit" id="Fullfør_kjøp_knapp">Fullfør kjøp</button>
                     </article>
-                    <article id="vilkår_artikkel">
+                    <article id="vilkår_artikkel" aria-label="Vilkår">
                         <p id="vilkårene_tekst">
                             Du bekrefter herved at opplysningene og dokumentene du har
                             oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg
                             retten til å heve eller avslutte avtaleforholdet dersom det foreligger
                             uriktige eller ufullstendige opplysninger.
                         </p>
-                        <label class="checkbox_vilkår">
+                        <label class="checkbox_vilkår" aria-label="Godta vilkår">
                             <input type="checkbox" name="godtar_vilkår" required>
                             Ja, jeg godtar vilkårene
                         </label>
-                        
-                        <label class="checkbox_vilkår">
+            
+                        <label class="checkbox_vilkår" aria-label="Motta nyhetsbrev">
                             <input type="checkbox" name="nyhetsbrev">
                             Ja takk! Send nyhetsbrev til meg
                         </label>
                     </article>
-                    </form>
-
+                </form>
             </section>
+            
         </main>
         <footer id="Global_footer" aria-label="Global footer">
             <section id="footer_logo" aria-label="Logo og beskrivelse">
