@@ -801,7 +801,7 @@ details ul, details p, details table {
 
 
 
-@media  (min-width: 700px) and (max-width: 1300px){
+@media  (min-width: 700px) and (max-width: 1200px){
         
     html{
         font-size: calc(0.5rem + 1vw)
