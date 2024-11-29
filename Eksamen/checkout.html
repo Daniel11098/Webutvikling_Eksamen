@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="online_store" content="Daniel-Azam">
+    <meta name="description" content="this is an online shopping store">
     <link rel="stylesheet" href="ikoner/css/solid.css">
     <link rel="stylesheet" href="ikoner/css/regular.css">
     <link rel="stylesheet" href="ikoner/css/fontawesome.css">
@@ -12,43 +14,43 @@
 </head>
 <body>
     <div id="checkout_container">
-        <header id="Global_header">
-            <form id="søkefelt">
-                <input type="search" placeholder="Søk her" title="Search">
-                <button type="submit" title="Søk etter"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <header id="Global_header" aria-label="Global header">
+            <form id="søkefelt" aria-label="Søkefelt">
+                <input type="search" placeholder="Søk her" title="Søk her" aria-label="Søk her">
+                <button type="submit" title="Søk etter" aria-label="Søk"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
             </form>
-            <nav id="header_navigeringsmeny">
-                <ul id="header_navigeringsliste1">
+            <nav id="header_navigeringsmeny" aria-label="Hovedmeny">
+                <ul id="header_navigeringsliste1" aria-label="Navigeringslenker">
                     <li class="hjemogprodukter">
-                        <a href="index.html">Hjem</a>
+                        <a href="index.html" aria-label="Gå til hjem">Hjem</a>
                     </li>
                     <li class="hjemogprodukter">
-                        <a href="index.html#Våre_mest_populære_produkter">Produkter</a>
+                        <a href="index.html#Våre_mest_populære_produkter" aria-label="Gå til våre mest populære produkter">Produkter</a>
                     </li>
                     <li>
-                        <a id="Logo1" href="index.html"><span id="Logo">Logo</span></a>
+                        <a id="Logo1" href="index.html" aria-label="Gå til hjemmesiden"><span id="Logo">Logo</span></a>
                     </li>
                     <li class="kontaktossogkatogerier">
-                        <a href="index.html#Våre_med_populære_kategorier">Kategorier</a>
+                        <a href="index.html#Våre_med_populære_kategorier" aria-label="Gå til våre mest populære kategorier">Kategorier</a>
                     </li>
                     <li class="kontaktossogkatogerier">
-                        <a href="#Global_footer">Kontakt oss</a>
+                        <a href="#Global_footer" aria-label="Gå til kontakt oss-seksjonen">Kontakt oss</a>
                     </li>
-                    
                 </ul>
-                <ul id="header_navigeringsliste2">
+                <ul id="header_navigeringsliste2" aria-label="Brukermeny">
                     <li>
-                        <a href="#"><i class="fa-regular fa-user"></i></a>
+                        <a href="#" aria-label="Gå til brukerkonto"><i class="fa-regular fa-user" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa-regular fa-heart"></i> </a>
+                        <a href="#" aria-label="Gå til ønskeliste"><i class="fa-regular fa-heart" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                    <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="checkout.html" aria-label="Gå til handlekurv"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></a>
                     </li>
                 </ul>
             </nav>
         </header>
+        
         <main id="main_checkout">
             <section id="Section1_kasse">
                 <nav>
@@ -243,7 +245,7 @@
                             <input type="number" id="kortnummer" name="kortnummer" placeholder="123456789" required title="Skriv inn ditt kortnummer">
                         </label>
                         
-                        <label id="utlopsdato1" for="utlopsdato" id="Utløpsdato">Utløpsdato (MM/ÅÅ)
+                        <label id="utlopsdato1" for="utlopsdato">Utløpsdato (MM/ÅÅ)
                             <input type="text" id="utlopsdato" name="utlopsdato" placeholder="MM/ÅÅ" required pattern="\d{2}/\d{2}" title="Fyll inn utlopsdato på ditt kort"> 
                             <i class="fa-regular fa-calendar"></i>
                         </label>
@@ -279,47 +281,75 @@
 
             </section>
         </main>
-        <footer id="Global_footer">
-            <section id="footer_logo">
+        <footer id="Global_footer" aria-label="Global footer">
+            <section id="footer_logo" aria-label="Logo og beskrivelse">
                 <h2>Logo</h2>
                 <p>Det er ingen som elsker smerte i seg selv, som søker og ønsker det, helt enkelt fordi det er smerte..</p>
             </section>
-            <section id="Kontakt_oss">
+            <section id="Kontakt_oss" aria-label="Kontaktinformasjon">
                 <h3>Kontakt</h3>
                 <ul>
-                    <li><i class="fa-solid fa-location-dot"></i> <span class="Footer_skrift">Adresse:</span> B R A Veien 8, 1757, Halden</li>
-                    <li><i class="fa-solid fa-phone"></i> <span class="Footer_skrift">Telefon:</span> 69 60 80 00</li>
-                    <li><i class="fa-solid fa-envelope"></i> <span class="Footer_skrift">E-post:</span> Halden.hiof.no</li>
-                    <li><i class="fa-solid fa-clock"></i><span class="Footer_skrift">Åpninstider:</span> Stenger 15:00</li>
+                    <li>
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i> 
+                        <span class="Footer_skrift">Adresse:</span> B R A Veien 8, 1757, Halden
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone" aria-hidden="true"></i> 
+                        <span class="Footer_skrift">Telefon:</span> 69 60 80 00
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i> 
+                        <span class="Footer_skrift">E-post:</span> Halden.hiof.no
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-clock" aria-hidden="true"></i> 
+                        <span class="Footer_skrift">Åpningstider:</span> Stenger 15:00
+                    </li>
                 </ul>
             </section>
-            <section id="Snarveier">
+            <section id="Snarveier" aria-label="Snarveier">
                 <h3>Snarveier</h3>
-                <nav>
-                    <ul> 
+                <nav aria-label="Navigeringslenker">
+                    <ul>
                         <li class="footer_liste">
-                            <a href="index.html#Våre_mest_populære_produkter">Produkter</a>
+                            <a href="index.html#Våre_mest_populære_produkter" aria-label="Gå til våre mest populære produkter">Produkter</a>
                         </li>
                         <li class="footer_liste">
-                            <a href="index.html#Våre_med_populære_kategorier">Kategorier</a>
+                            <a href="index.html#Våre_med_populære_kategorier" aria-label="Gå til våre mest populære kategorier">Kategorier</a>
                         </li>
                         <li class="footer_liste">
-                            <a href="index.html#Kontakt_oss">Kontakt oss</a>
+                            <a href="index.html#Kontakt_oss" aria-label="Gå til kontakt oss-seksjonen">Kontakt oss</a>
                         </li>
                     </ul>
-                </nav> 
+                </nav>
             </section>
-            <section id="sosiale_medier"> 
+            <section id="sosiale_medier" aria-label="Sosiale medier">
                 <h3>Sosiale medier</h3>
                 <ul>
-                    <li class="footer_liste"><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li class="footer_liste"><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li class="footer_liste"><a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li class="footer_liste"><a href="https://no.pinterest.com/" target="_blank"> <i class="fa-brands fa-pinterest"></i></a></li>
+                    <li class="footer_liste">
+                        <a href="https://www.instagram.com/" target="_blank" aria-label="Følg oss på Instagram">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="footer_liste">
+                        <a href="https://www.facebook.com/" target="_blank" aria-label="Følg oss på Facebook">
+                            <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="footer_liste">
+                        <a href="https://www.linkedin.com/" target="_blank" aria-label="Følg oss på LinkedIn">
+                            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="footer_liste">
+                        <a href="https://no.pinterest.com/" target="_blank" aria-label="Følg oss på Pinterest">
+                            <i class="fa-brands fa-pinterest" aria-hidden="true"></i>
+                        </a>
+                    </li>
                 </ul>
-
             </section>
         </footer>
+        
     </div>
     
 </body>
